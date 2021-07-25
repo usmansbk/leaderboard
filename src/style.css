@@ -58,3 +58,24 @@ main {
   flex-direction: column;
   gap: 20px;
 }
+
+.primary-button {
+  border: none;
+  background-color: #8e44ad;
+  color: #fff;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  opacity: 0.8;
+}
+
+.primary-button:active {
+  opacity: 0.6;
+}
+
+.score-input:focus {
+  outline: none;
+  border: 1px solid #8e44ad;
+  box-shadow: 0 0 10px #719ece;
+}
