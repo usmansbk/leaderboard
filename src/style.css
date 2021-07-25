@@ -4,6 +4,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 8px;
+}
+
+li:nth-child(odd) {
+  background-color: lightgrey;
+}
+
 body {
   padding: 16px;
 }
