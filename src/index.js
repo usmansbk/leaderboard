@@ -15,31 +15,27 @@ function displayScores(scores = []) {
 }
 
 window.addEventListener('load', async () => {
-  try {
-    const id = await API.createGame(GAME_NAME);
-    const refreshButton = document.getElementById('refresh-button');
-    const form = document.getElementById('add-score');
+  const id = await API.createGame(GAME_NAME);
+  const refreshButton = document.getElementById('refresh-button');
+  const form = document.getElementById('add-score');
 
-    refreshButton.addEventListener('click', async () => {
-      const scores = await API.fetchScores(id);
-      displayScores(scores);
-    });
+  refreshButton.addEventListener('click', async () => {
+    const scores = await API.fetchScores(id);
+    displayScores(scores);
+  });
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const nameInput = form.elements[0];
-      const scoreInput = form.elements[1];
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const nameInput = form.elements[0];
+    const scoreInput = form.elements[1];
 
-      const data = {
-        user: nameInput.value,
-        score: scoreInput.value,
-      };
+    const data = {
+      user: nameInput.value,
+      score: scoreInput.value,
+    };
 
-      await API.submitScore(id, data);
+    await API.submitScore(id, data);
 
-      form.reset();
-    });
-  } catch (error) {
-    // Report error
-  }
+    form.reset();
+  });
 });
