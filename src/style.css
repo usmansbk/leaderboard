@@ -15,6 +15,10 @@ main {
   padding: 8px 16px;
 }
 
+.action-button {
+  align-self: flex-end;
+}
+
 .add-score-form {
   display: flex;
   flex-direction: column;
