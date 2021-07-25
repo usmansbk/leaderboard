@@ -19,10 +19,12 @@ window.addEventListener('load', async () => {
   const refreshButton = document.getElementById('refresh-button');
   const form = document.getElementById('add-score');
 
-  refreshButton.addEventListener('click', async () => {
+  const refreshScores = async () => {
     const scores = await API.fetchScores(id);
     displayScores(scores);
-  });
+  };
+
+  refreshButton.addEventListener('click', refreshScores);
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
@@ -35,6 +37,7 @@ window.addEventListener('load', async () => {
     };
 
     await API.submitScore(id, data);
+    await refreshScores();
 
     form.reset();
   });
