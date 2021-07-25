@@ -16,7 +16,7 @@ The leaderboard website displays scores submitted by different players. It also 
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://usmansbk.github.io/leaderboard/)
 
 ## Getting Started
 
