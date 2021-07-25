@@ -18,6 +18,13 @@ li:nth-child(odd) {
 
 body {
   padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 main {
@@ -30,14 +37,11 @@ main {
   margin-bottom: 20px;
 }
 
-.scores-section {
-  width: 30%;
-}
-
 .scores-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 40px;
 }
 
 .primary-button,
