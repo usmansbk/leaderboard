@@ -1,10 +1,13 @@
+import * as API from './api.js';
 import './style.css';
 
-window.addEventListener('load', () => {
-  const ul = document.getElementById('scores');
-  new Array(10).fill(0).forEach((_, index) => {
-    const li = document.createElement('li');
-    li.innerText = `Name: ${index}`;
-    ul.appendChild(li);
-  });
+const GAME_NAME = 'usman';
+
+window.addEventListener('load', async () => {
+  try {
+    const id = await API.createGame(GAME_NAME);
+    console.log(id);
+  } catch (error) {
+    // Report error
+  }
 });
