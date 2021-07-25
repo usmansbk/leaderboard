@@ -13,8 +13,12 @@ export async function createGame(name) {
     },
   });
   const { result } = await response.json();
-  const id = utils.getId(result);
+  const id = utils.parseId(result);
   return id;
 }
 
-export function fetchScores() {}
+export async function fetchScores(id) {
+  const response = await fetch(`${BASE_URL}games/${id}/scores/`);
+  const { result } = await response.json();
+  return result;
+}
