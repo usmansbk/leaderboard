@@ -10,7 +10,8 @@ main {
   align-items: center;
 }
 
-.primary-button, .score-input {
+.primary-button,
+.score-input {
   padding: 8px 16px;
 }
 
