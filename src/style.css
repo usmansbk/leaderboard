@@ -1,3 +1,25 @@
-body {
-  background-color: bisque;
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.scores-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button {
+  padding: 8px 16px;
+}
+
+.score-input {
+  padding: 8px 16px;
+}
+
+.add-score-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
