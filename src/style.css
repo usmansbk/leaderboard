@@ -1,7 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 16px;
+}
+
 main {
   display: flex;
-  justify-content: space-between;
-  width: 60%;
+  gap: 100px;
+  padding: 40px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.scores-section {
+  width: 30%;
 }
 
 .scores-header {
