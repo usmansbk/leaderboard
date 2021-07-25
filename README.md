@@ -1,12 +1,12 @@
-# Project Name
+# Leaderboard
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-> One paragraph statement about the project.
+> The leaderboard website displays scores submitted by different players.
 
 ![screenshot](./app_screenshot.jpeg)
 
-Additional description about the project and its features.
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 
 ## Built With
 
@@ -29,8 +29,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ```bash
-git clone https://github.com/usmansbk/repo_name.git
-cd ./repo_name
+git clone https://github.com/usmansbk/leaderboard.git
+cd ./leaderboard
 ```
 
 ### Install
@@ -77,6 +77,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+- [Leaderboard API Service](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
 
 ## 📝 License
 
