@@ -1,12 +1,10 @@
 import './style.css';
 
-function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = 'Welcome to Microverse';
-  element.classList.add('hello');
-
-  return element;
-}
-
-document.body.appendChild(component());
+window.addEventListener('load', () => {
+  const ul = document.getElementById('scores');
+  new Array(10).fill(0).forEach((score, index) => {
+    const li = document.createElement('li');
+    li.innerText = index;
+    ul.appendChild(li);
+  });
+});
