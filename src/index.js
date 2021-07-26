@@ -3,7 +3,7 @@ import './style.css';
 
 const GAME_NAME = 'usman';
 
-function displayScores(scores = []) {
+const displayScores = (scores = []) => {
   const ul = document.getElementById('scores');
   ul.innerHTML = '';
 
@@ -12,7 +12,7 @@ function displayScores(scores = []) {
     li.innerText = `${user}: ${score}`;
     ul.appendChild(li);
   });
-}
+};
 
 window.addEventListener('load', async () => {
   const id = await API.createGame(GAME_NAME);
