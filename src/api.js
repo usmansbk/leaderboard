@@ -1,17 +1,17 @@
 import { parseId, post, get } from './util.js';
 
-export async function createGame(name) {
+export const createGame = async (name) => {
   const { result } = await post('games', { name });
   const id = parseId(result);
   return id;
-}
+};
 
-export async function fetchScores(id) {
+export const fetchScores = async (id) => {
   const { result } = await get(`games/${id}/scores/`);
   return result;
-}
+};
 
-export async function submitScore(id, data) {
+export const submitScore = async (id, data) => {
   const { result } = await post(`games/${id}/scores/`, data);
   return result;
-}
+};
