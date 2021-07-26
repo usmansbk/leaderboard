@@ -1,6 +1,6 @@
 const BASE_URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-export const parseId = async (result = '') => {
+export const parseId = (result = '') => {
   const startIndex = 'Game with ID: '.length - 1;
   const endIndex = result.lastIndexOf(' ');
   return result.substring(startIndex, endIndex + 1);
